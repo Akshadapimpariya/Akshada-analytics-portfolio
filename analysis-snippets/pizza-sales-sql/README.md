@@ -1,4 +1,4 @@
-# Pizza Sales SQL Analysis — Mini Project
+# Pizza Sales SQL Analysis
 
 **Author:** Akshada Pimpariya  
 **Tools:** SQL, PostgreSQL / MySQL  
