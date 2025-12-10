@@ -1,4 +1,3 @@
-```markdown
 # 📞 Call Centre Performance Dashboard (Power BI)
 
 This repository hosts a professional Business Intelligence project featuring an interactive Power BI dashboard designed for Call Centre management. The dashboard provides a visual, real-time-like view of operational efficiency and service performance.
