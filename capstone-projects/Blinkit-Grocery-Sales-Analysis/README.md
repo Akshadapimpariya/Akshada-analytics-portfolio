@@ -54,4 +54,4 @@ The final **Interactive Visualization** layer.
 3. **Dashboard:** Open `blinkit.pbix` in **Power BI Desktop** to interact with the final visual report.
 
 ---
-**Capstone Project by [Your Name]** *Turning Data into Grocery Insights!* 🥖🥦🍎
+
