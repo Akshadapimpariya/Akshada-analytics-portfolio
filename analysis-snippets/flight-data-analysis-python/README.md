@@ -1,61 +1,59 @@
-✈️ Airline Flight Data Analysis
-This project involves an exploratory data analysis (EDA) of a comprehensive flight dataset to understand the factors influencing flight ticket prices and travel patterns across various Indian cities.
+# ✈️ Airline Flight Data Analysis Project (Python)
 
-📋 Dataset Description
-The analysis is based on the airlines_flights_data.csv dataset, which contains 300,153 records and 11 columns.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Exploratory-Data_Analysis-blueviolet?style=for-the-badge)
 
-Key Attributes:
-airline: The name of the airline operating the flight.
+## Project Overview
 
-flight: The flight code.
+This project performs an in-depth **Exploratory Data Analysis (EDA)** on a flight booking dataset. The goal is to clean large-scale transactional data and derive insights regarding pricing trends, flight durations, and service patterns across major Indian cities using Python.
 
-source_city: The city from which the flight departs.
+## Data Source and Schema
 
-departure_time: Time of day for departure (e.g., Morning, Evening, Night).
+The analysis uses the `airlines_flights_data.csv` dataset, which contains **300,153 rows** and **11 columns**.
 
-stops: Number of stops between source and destination.
+### Flight Data Table Schema
 
-arrival_time: Time of day for arrival.
+| Column Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `airline` | `Object` | Name of the airline company. |
+| `flight` | `Object` | Specific flight code/number. |
+| `source_city` | `Object` | City of departure. |
+| `departure_time` | `Object` | Time slot of departure (e.g., Morning, Night). |
+| `stops` | `Object` | Number of stops (zero, one, two_or_more). |
+| `arrival_time` | `Object` | Time slot of arrival. |
+| `destination_city`| `Object` | City of arrival. |
+| `class` | `Object` | Travel class (Economy or Business). |
+| `duration` | `Float` | Total travel time in hours. |
+| `days_left` | `Int` | Days remaining between booking and travel. |
+| `price` | `Int` | Ticket price in INR. |
 
-destination_city: The city where the flight lands.
+## Analysis Phases
 
-class: Travel class (Economy or Business).
+The project is structured into logical data science workflows:
 
-duration: Total travel time in hours.
+### 1. Environment Setup 🏗️
+* Integration of core data science libraries: `Pandas`, `NumPy`, `Matplotlib`, and `Seaborn`.
 
-days_left: Number of days between booking and departure.
+### 2. Data Cleaning 🧹
+* **Refining Features:** Removed unnecessary columns such as `index` to optimize memory usage and focus on relevant variables.
+* **Integrity Check:** Performed `.info()` and `.describe()` to verify data types and identify statistical anomalies.
 
-price: Ticket price.
+### 3. Exploratory Data Analysis (EDA) 🕵️
+* **Statistical Summary:** Identified the average flight price is **₹20,889**, while durations average **12.22 hours**.
+* **Extreme Value Analysis:**
+    * **Maximum Duration:** Identified Air India flight `AI-672` as the longest flight at **49.83 hours**.
+    * **Minimum Duration:** Found multiple Indigo flights between Bangalore and Chennai taking only **0.83 hours**.
 
-🔍 Analysis Highlights
-The notebook flight.ipynb performs several data cleaning and exploration tasks:
+### 4. Visual Insights & Business Logic 📈
+The notebook uses visualization techniques to answer critical travel business questions:
+* Relationship between **Class (Economy vs. Business)** and ticket pricing.
+* Impact of **Days Left** for booking on the final price.
 
-Data Cleaning: Removed unnecessary columns like index to streamline the analysis.
+## 🛠️ Requirements & Execution
 
-Exploratory Statistics:
+1. **Prerequisites:** Python 3.x with `pandas`, `numpy`, `matplotlib`, and `seaborn` installed.
+2. **Dataset:** Place `airlines_flights_data.csv` in the root directory.
+3. **Execution:** Run the `flight.ipynb` notebook sequentially to generate full statistical reports and plots.
 
-The average flight duration is approximately 12.22 hours.
-
-The maximum flight duration observed is 49.83 hours (Air India flight AI-672).
-
-The minimum flight duration is 0.83 hours (primarily Indigo flights between Bangalore and Chennai).
-
-Price Insights: Analyzed ticket pricing which ranges from a minimum of 1,105 to a maximum of 123,071.
-
-Data Visualization: Utilized libraries like seaborn and matplotlib to visualize relationships between different flight features and their impact on pricing.
-
-🛠️ Tools & Libraries
-Python 🐍: The core programming language.
-
-Pandas: For data manipulation and loading the CSV.
-
-NumPy: For numerical computations.
-
-Matplotlib & Seaborn: For creating insightful data visualizations.
-
-🚀 Getting Started
-Ensure airlines_flights_data.csv is in your working directory.
-
-Open flight.ipynb in your preferred Jupyter environment.
-
-Run the cells sequentially to reproduce the analysis and view the generated plots.
+---
