@@ -1,46 +1,36 @@
-# Diwali Sales Data Analytics 🪔📊
+# Diwali Festive Sales Analysis 🪔
 
-A comprehensive data analytics project aimed at improving customer experience and increasing sales during the festive season. This repository features an end-to-end pipeline including data cleaning, SQL-based business intelligence, and Python-driven exploratory data analysis (EDA).
+An end-to-end data analytics project focused on identifying consumer behavior and sales trends during the Diwali festive season. This project provides actionable insights into customer demographics, high-performing regions, and top-selling product categories.
 
-## 📂 Project Structure
+## 📂 Project Components
 
 | File | Description |
 | :--- | :--- |
-| `Diwali Sales Data.csv` | Raw transactional dataset featuring 11,000+ records of customer demographics and purchase history. |
-| `Diwali_Sales_Analysis.ipynb` | Python Notebook for data cleaning, handling null values, and performing EDA with Seaborn/Matplotlib. |
-| `diwali sales.sql` | SQL script for database schema management, duplicate removal, and advanced analytical queries. |
-| `Diwali Sales.pbix` | Interactive Power BI dashboard providing a visual summary of sales performance across states and sectors. |
+| `Diwali Sales Data.csv` | Raw dataset containing over 11,000 transaction records. |
+| `Diwali_Sales_Analysis.ipynb` | Python notebook for data cleaning (handling nulls/duplicates) and Exploratory Data Analysis (EDA). |
+| `diwali sales.sql` | SQL scripts for advanced database queries, revenue tracking, and customer segmentation. |
+| `Diwali Sales.pbix` | Interactive Power BI Dashboard for high-level executive reporting. |
 
-## 🛠️ Data Pipeline & Insights
+## 🛠️ Key Technical Features
 
-### 1. Data Cleaning (Python & SQL)
-* [cite_start]**Deduplication:** Successfully identified and removed duplicate records to ensure data integrity[cite: 13].
-* [cite_start]**Handling Missing Values:** Used Python and SQL to update null values in the 'Amount' column and remove incomplete entries[cite: 13].
-* [cite_start]**Data Types:** Standardized numerical columns (Orders, Amount) for high-performance calculations[cite: 13].
+### 1. Data Wrangling (Python & SQL)
+* **Cleaning:** Removed duplicate entries and handled missing values in the 'Amount' column.
+* **Optimization:** Standardized data types for faster calculation of total revenue and order volume.
 
-### 2. Exploratory Data Analysis (EDA)
-[cite_start]Using Python libraries like `pandas` and `seaborn`, the project identifies key consumer behaviors[cite: 11]:
-* [cite_start]**Gender-Based Spending:** Analysis shows that female customers significantly outspend male customers[cite: 11].
-* [cite_start]**Age Demographics:** The **26-35 age group** is the primary driver of revenue across most states[cite: 11].
-* [cite_start]**Regional Performance:** Uttar Pradesh, Maharashtra, and Karnataka emerge as the top states by total order volume and amount[cite: 13].
+### 2. Business Insights
+* **Demographics:** Analysis revealed that the **26-35 age group** and **female customers** are the highest contributors to total sales.
+* **Regional Trends:** Identified **Uttar Pradesh, Maharashtra, and Karnataka** as the top three revenue-generating states.
+* **Sector Analysis:** Discovered that employees in the **IT, Healthcare, and Aviation** sectors have the highest festive spending power.
 
-### 3. Advanced SQL Business Logic
-[cite_start]The `diwali sales.sql` script provides deep-dive queries including[cite: 13]:
-* [cite_start]**Top Selling Categories:** Identifying the highest-selling product categories (Food, Clothing, Electronics) per zone using window functions[cite: 13].
-* [cite_start]**Customer Activity:** Detecting customers active across multiple states and calculating average order values (AOV) by demographic[cite: 13].
-* [cite_start]**Revenue by Occupation:** Pinpointing the top-contributing sectors (IT, Healthcare, Aviation) per geographic zone[cite: 13].
+### 3. Advanced SQL Queries
+* **Market Hubs:** Queries to find the highest-selling product category per geographic zone.
+* **Customer Loyalty:** Identified "Power Users" active across multiple states.
+* **Profitability:** Rank-based analysis of the most profitable occupations by region.
 
-## 📊 Visual Intelligence (Power BI)
-The Power BI dashboard translates complex datasets into interactive visuals, focusing on:
-* **State-wise Sales Distribution:** Heatmaps for geographic targeting.
-* **Occupation & Sector Analysis:** Visualizing which professional sectors dominate festive spending.
-* **Product Performance:** Tracking top-selling products by volume.
-
-## 🚀 How to Run
-1.  **Clone the repo:** `git clone https://github.com/your-username/Diwali-Sales-Analysis.git`
-2.  [cite_start]**SQL Setup:** Execute the `diwali sales.sql` script in a PostgreSQL or compatible environment to create and populate the database[cite: 13].
-3.  [cite_start]**Python Analysis:** Open `Diwali_Sales_Analysis.ipynb` in Jupyter Notebook or VS Code to view the data cleaning and visualization logic[cite: 11].
-4.  **Dashboard:** Use Power BI Desktop to open `Diwali Sales.pbix` and explore the interactive report.
+## 🚀 How to Use
+1.  **Run Python Analysis:** Use the `.ipynb` file to see the step-by-step cleaning and visualization process.
+2.  **Database Queries:** Import the CSV into a SQL environment and run `diwali sales.sql` for deep-dive reporting.
+3.  **View Dashboard:** Open `Diwali Sales.pbix` in Power BI Desktop to interact with the visual data.
 
 ---
-**Tech Stack:** Python (Pandas, Seaborn), SQL (PostgreSQL), Power BI, Data Wrangling.
+**Tech Stack:** Python (Pandas, Seaborn), SQL (PostgreSQL), Power BI.
